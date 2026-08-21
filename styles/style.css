@@ -1,0 +1,1720 @@
+@charset "utf-8";
+
+/* #region header ---↓↓↓---全体用の記述---↓↓↓--- */
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.attachSpace {
+    letter-spacing: 0.1em;
+    line-height: 1;
+}
+
+.attachFont {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+
+.attachLine::before,
+.attachLine::after {
+    content: "";
+    max-width: 60.5px;
+    width: 100%;
+    height: 1px;
+    background-color: #223E69;
+    margin: 0 8.5px;
+}
+
+h1 {
+    font-family: "Noto Serif JP", serif;
+    font-size: 42px;
+    font-weight: bold;
+    background: url(../images/png/colorGradient.png) no-repeat center/cover;
+    background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-family: "Noto Serif JP", serif;
+    height: 16px;
+    margin: 16px auto 48px;
+    font-weight: 300;
+    color: #223E69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #endregion ---↑↑↑---全体用の記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---headerの記述---↓↓↓--- */
+
+header {
+    position: relative;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header .heroImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.navDiv {
+    display: flex;
+    background-image:
+        radial-gradient(circle, rgba(196, 250, 255, 0.95) 0 8px, transparent 9px),
+        radial-gradient(circle, rgba(192, 214, 255, 0.9) 0 14px, transparent 15px),
+        radial-gradient(circle, #c7ebffd9 0 6px, transparent 7px),
+        radial-gradient(circle, #aaa7fde6 0 11px, transparent 12px),
+        radial-gradient(circle, #a1ffebcc 0 5px, transparent 6px);
+    background-size:
+        220px 90px,
+        320px 96px,
+        180px 197px,
+        260px 62px,
+        140px 140px;
+    background-position:
+        60px 50px,
+        156px 160px,
+        132px 320px,
+        230px 40px,
+        264px 180px;
+}
+
+.logoAll {
+    display: flex;
+    margin: 24px 24px 29px;
+    max-width: 400px;
+    width: 100%;
+    height: 33px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 629px;
+    width: 100%;
+    height: 16px;
+    margin: 32px 24px 38px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+}
+
+nav ul li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav ul li:hover {
+    text-decoration: underline solid #333333;
+    font-weight: bold;
+}
+
+nav ul li a {
+    font-family: "Noto Serif JP", serif;
+    color: #333333;
+}
+
+.menuDiv {
+    position: absolute;
+}
+
+.menuBtn {
+    appearance: none;
+}
+
+/* #region Header  ここはロゴの記述 */
+.d1 {
+    position: absolute;
+    top: 0.79px;
+    left: 0;
+    max-width: 21.23px;
+    width: 100%;
+    height: auto;
+}
+
+.d2 {
+    position: absolute;
+    top: 8.64px;
+    left: 22.24px;
+    max-width: 16.15px;
+    width: 100%;
+    height: auto;
+}
+
+.d3 {
+    position: absolute;
+    top: 9px;
+    left: 39.36px;
+    max-width: 12.95px;
+    width: 100%;
+    height: auto;
+}
+
+.d4 {
+    position: absolute;
+    top: 2px;
+    left: 55px;
+    max-width: 7.51px;
+    width: 100%;
+    height: auto;
+}
+
+.d5 {
+    position: absolute;
+    top: 8.64px;
+    left: 63.74px;
+    max-width: 18.5px;
+    width: 100%;
+    height: auto;
+}
+
+.d6 {
+    position: absolute;
+    top: 8.64px;
+    left: 84.12px;
+    max-width: 16.28px;
+    width: 100%;
+    height: auto;
+}
+
+.h1 {
+    position: absolute;
+    top: 0.79px;
+    left: 112.99px;
+    max-width: 22.32px;
+    width: 100%;
+    height: auto;
+}
+
+.h2 {
+    position: absolute;
+    top: 8.67px;
+    left: 136.96px;
+    max-width: 17.89px;
+    width: 100%;
+    height: auto;
+}
+
+.h3 {
+    position: absolute;
+    top: 9.15px;
+    left: 156.91px;
+    max-width: 16.21px;
+    width: 100%;
+    height: auto;
+}
+
+.h4 {
+    position: absolute;
+    top: 8.69px;
+    left: 173.58px;
+    max-width: 12.95px;
+    width: 100%;
+    height: auto;
+}
+
+.h5 {
+    position: absolute;
+    top: 8.64px;
+    left: 188.64px;
+    max-width: 16.15px;
+    width: 100%;
+    height: auto;
+}
+
+.r1 {
+    position: absolute;
+    top: 0.79px;
+    left: 216.76px;
+    max-width: 17.43px;
+    width: 100%;
+    height: auto;
+}
+
+.r2 {
+    position: absolute;
+    top: 8.64px;
+    left: 235.82px;
+    max-width: 16.15px;
+    width: 100%;
+    height: auto;
+}
+
+.r3 {
+    position: absolute;
+    top: 8.64px;
+    left: 253.35px;
+    max-width: 16.28px;
+    width: 100%;
+    height: auto;
+}
+
+.r4 {
+    position: absolute;
+    top: 8.67px;
+    left: 271.62px;
+    max-width: 17.89px;
+    width: 100%;
+    height: auto;
+}
+
+.r5 {
+    position: absolute;
+    top: 9.15px;
+    left: 289.99px;
+    max-width: 17.88px;
+    width: 100%;
+    height: auto;
+}
+
+.r6 {
+    position: absolute;
+    top: 8.66px;
+    left: 307.23px;
+    max-width: 18.01px;
+    width: 100%;
+    height: auto;
+}
+
+.r7 {
+    position: absolute;
+    top: 3.86px;
+    left: 329.71px;
+    max-width: 9.55px;
+    width: 100%;
+    height: auto;
+}
+
+.r8 {
+    position: absolute;
+    top: 2px;
+    left: 340.72px;
+    max-width: 7.51px;
+    width: 100%;
+    height: auto;
+}
+
+.r9 {
+    position: absolute;
+    top: 8.67px;
+    left: 349.03px;
+    max-width: 17.89px;
+    width: 100%;
+    height: auto;
+}
+
+.r10 {
+    position: absolute;
+    top: 8.64px;
+    left: 368.95px;
+    max-width: 16.28px;
+    width: 100%;
+    height: auto;
+}
+
+.r11 {
+    position: absolute;
+    top: 8.69px;
+    left: 387.05px;
+    max-width: 12.95px;
+    width: 100%;
+    height: auto;
+}
+
+/* #endregion */
+
+/* #endregion ---↑↑↑---headerの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---footerの記述---↓↓↓--- */
+footer {
+    background-color: #333333;
+    color: white;
+}
+
+small {
+    display: inline-block;
+    font-family: "Noto Serif JP", serif;
+    margin: 24px 0;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*footerのsmallに疑似要素でコピーライトを追加*/
+
+small::before {
+    content: "©";
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    left: -10px;
+    max-width: 6px;
+    width: 100%;
+    height: auto;
+}
+
+/*footerの上の余白をclassで設定しています*/
+
+.voidSection {
+    max-width: 1366px;
+    width: 100%;
+    height: 214px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.topPage {
+    position: relative;
+    bottom: 0;
+    margin-right: 24px;
+    background-color: #333333;
+    max-width: 60px;
+    width: 100%;
+    height: 60px;
+}
+
+.topPage img {
+    position: relative;
+    top: 20px;
+}
+
+/* #endregion ---↑↑↑---footerの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---mainの記述---↓↓↓--- */
+
+/* #region header ---↓↓↓---conceptSectionの記述---↓↓↓--- */
+.conceptSection {
+    max-width: 1020px;
+    width: 100%;
+    margin: 160px auto;
+    position: relative;
+    top: 0;
+}
+
+.conceptSection p {
+    line-height: 32px;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+/* #endregion ---↑↑↑---conceptSectionの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---serviceSectionの記述---↓↓↓--- */
+
+.serviceSection {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto 160px;
+    position: relative;
+}
+
+.serviceAll {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.roomArea {
+    max-width: 300px;
+    width: 100%;
+}
+
+.roomArea p {
+    height: 48px;
+    line-height: 24px;
+    text-align: justify;
+    margin: 16px 0;
+}
+
+.roomArea a {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333333;
+    margin: 5px;
+}
+
+.roomArea a::after {
+    content: url(../images/svg/arrow.svg);
+    display: inline-block;
+    width: 4.75px;
+    height: 9.5px;
+    margin: 0 0 0 5px;
+}
+
+/* #endregion ---↑↑↑---serviceSectionの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---flowSectionの記述---↓↓↓--- */
+
+.flowSection {
+    margin-bottom: 160px;
+    background-color: #223e690d;
+}
+
+#flowArea {
+    display: inline-block;
+    margin-top: 48px;
+}
+
+.flowText {
+    color: #B71B26;
+}
+
+.flowText::before,
+.flowText::after {
+    background-color: #B71B26;
+}
+
+.flowSection ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flowSection ol li {
+    writing-mode: vertical-lr;
+    max-width: 60px;
+    width: 100%;
+    max-height: 280px;
+    height: 100%;
+    margin: 0 40px 48px;
+    background-color: #333333;
+    border-radius: 60px;
+}
+
+.flowSection ol li p {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 16px;
+}
+
+/* #region header リスト間の子要素に付加する疑似要素の記述 */
+
+.beforeArrow1::after {
+    content: "";
+    background: url(../images/svg/arrow1.svg) no-repeat center/cover;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    margin: clamp(30px, 3.5vw, 41px);
+}
+
+.beforeArrow2::after {
+    content: "";
+    background: url(../images/svg/arrow2.svg) no-repeat center/cover;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    margin: clamp(30px, 3.5vw, 41px);
+}
+
+.beforeArrow3::after {
+    content: "";
+    background: url(../images/svg/arrow3.svg) no-repeat center/cover;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    margin: clamp(30px, 3.5vw, 41px);
+}
+
+.beforeArrow4::after {
+    content: "";
+    background: url(../images/svg/arrow4.svg) no-repeat center/cover;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    margin: clamp(30px, 3.5vw, 41px);
+}
+
+.beforeArrow5::after {
+    content: "";
+    background: url(../images/svg/arrow5.svg) no-repeat center/cover;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    margin: clamp(30px, 3.5vw, 41px);
+}
+
+/* #endregion */
+
+/* #endregion ---↑↑↑---flowSectionの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---Q&ASectionの記述---↓↓↓--- */
+
+.questionAndAnswerSection h1 {
+    height: 48px;
+}
+
+.questionAndAnswerSection {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto 160px;
+    position: relative;
+}
+
+.questionAndAnswerSection dl dt,
+.questionAndAnswerSection dl dd {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+
+.questionAndAnswerSection dl .disPosition {
+    align-items: flex-start;
+}
+
+.attachScale {
+    max-width: 960px;
+    width: 100%;
+}
+
+dt div span,
+dd div span {
+    font-family: "Noto Serif JP", serif;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.questionAndAnswerSection dl dt {
+    margin-bottom: 16px;
+}
+
+.questionAndAnswerSection dl dd {
+    margin-bottom: 48px;
+}
+
+dl dd div,
+dl dt div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B71B26;
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    margin-right: 8px;
+}
+
+dl dt div {
+    background-color: #333333;
+}
+
+.positionEnable {
+    padding-top: 12px;
+}
+
+.qaEnable {
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+}
+
+
+/* #endregion ---↑↑↑---Q&ASectionの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---contactSectionの記述---↓↓↓--- */
+
+.contactSection {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px;
+    background: url(../images/png/hydrengia.png) no-repeat center/cover;
+}
+
+form {
+    max-width: 1020px;
+    width: 100%;
+    background-color: #8a8989d5;
+    margin: 0 auto;
+    padding: 48px 24px 48px;
+}
+
+.gridDiv {
+    display: grid;
+    grid-template-rows: 24px 52px 52px 52px 52px 52px 52px 52px 52px 132px;
+    grid-template-columns: 250px 65px 113px 125px 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 24px;
+    margin-bottom: 48px;
+}
+
+form p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin: auto 4px auto 0;
+}
+
+.disFont {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+}
+
+input[type="radio"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background-color: #ffffff;
+    height: 52px;
+    text-align: justify;
+    padding: 0 10px;
+    resize: none;
+}
+
+form .pointDiv {
+    background-color: #B71B26;
+    color: white;
+    border-radius: 8px;
+    max-width: 58px;
+    width: 100%;
+    height: 24px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .pointDiv span {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #ffffff;
+    position: relative;
+    bottom: 0px;
+}
+
+.mediaAll {
+    display: contents;
+}
+
+.itemSelect {
+    margin-left: 4px;
+}
+
+/* #region header グリッドに関する記述 */
+.item01 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.item02 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.item03 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    text-align: left;
+}
+
+.itemEx {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    text-align: left;
+}
+
+.item04 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.item05 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.item06 {
+    grid-row: 2/3;
+    grid-column: 3/5;
+}
+
+.item07 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.item08 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.item09 {
+    grid-row: 3/4;
+    grid-column: 3/5;
+}
+
+.item10 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.item11 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.item12 {
+    grid-row: 4/5;
+    grid-column: 3/5;
+}
+
+.item13 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.item14 {
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+.item15 {
+    grid-row: 5/6;
+    grid-column: 3/5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemEx2 {
+    grid-row: 6/7;
+    grid-column: 3/6;
+}
+
+.item16 {
+    grid-row: 7/8;
+    grid-column: 1/2;
+}
+
+.item17 {
+    grid-row: 7/8;
+    grid-column: 2/3;
+}
+
+.item18 {
+    grid-row: 7/8;
+    grid-column: 3/6;
+}
+
+.item19 {
+    grid-row: 8/9;
+    grid-column: 1/2;
+}
+
+.item20 {
+    grid-row: 8/9;
+    grid-column: 2/3;
+}
+
+.item21 {
+    grid-row: 8/9;
+    grid-column: 3/6;
+}
+
+.item22 {
+    grid-row: 9/10;
+    grid-column: 1/2;
+}
+
+.item23 {
+    grid-row: 9/11;
+    grid-column: 3/6;
+    height: 208px;
+}
+
+/* #endregion */
+
+.innerDiv {
+    text-align: center;
+    background-color: #333333;
+    max-width: 300px;
+    width: 100%;
+    height: 68px;
+    color: white;
+    margin: auto;
+    position: relative;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+    height: 68px;
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.attachAfter::after {
+    content: "";
+    background-image: url(../images/svg/arrowWhite.svg);
+    background-size: 100% 100%;
+    object-fit: cover;
+    display: inline-block;
+    width: 9.5px;
+    height: 19px;
+    position: absolute;
+    top: 25px;
+    right: 39.25px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 4px;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(73, 140, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form .gridDiv textarea {
+    padding: 10px;
+}
+
+/* #endregion ---↑↑↑---contactSectionの記述---↑↑↑--- */
+
+/* #endregion ---↑↑↑---mainの記述---↑↑↑--- */
+
+/* #region header ---↓↓↓---Decolation用に記述---↓↓↓--- */
+
+.decoCross::before {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(to right, #00bfff, #33333300);
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.decolationDiv::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(to bottom, #00bfff, #33333300);
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.decoCross::after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(to left, #00bfff, #33333300);
+    position: absolute;
+    bottom: -80px;
+    right: 0px;
+}
+
+.decolationDiv::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to left top, #00bfff, #33333300);
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.decolationDiv2::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to right bottom, #00bfff, #33333300);
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+}
+
+.decolationDiv2::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(to top, #00bfff, #33333300);
+    position: absolute;
+    bottom: -100px;
+    right: 20px;
+}
+
+.roomArea:has(.bathRoom:hover) img {
+    filter: brightness(105%);
+}
+
+.roomArea:has(.livingRoom:hover) img {
+    filter: brightness(105%);
+}
+
+.roomArea:has(.kitchenRoom:hover) img {
+    filter: brightness(105%);
+}
+
+/* #endregion ---↑↑↑---decolation用の記述---↑↑↑--- */
+
+@media screen and (max-width:1100px) {
+
+    /* #region header ハンバーガーメニューに関する記述　*/
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 0%;
+        opacity: 0;
+        visibility: hidden;
+        background: #ffffffe6;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 100;
+    }
+
+    nav ul {
+        margin: 0 0 0 0;
+        padding: 58px 0 0 0;
+    }
+
+    .menuIcon {
+        cursor: pointer;
+        display: block;
+        width: 31px;
+        height: 20px;
+        position: fixed;
+        top: 14px;
+        left: clamp(320px, 90vw, 1300px);
+        z-index: 120;
+    }
+
+    .menuBtn {
+        position: fixed;
+        left: -9999px;
+        overflow: hidden;
+    }
+
+    .navicon {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #1b61b7;
+        position: relative;
+        top: 10px;
+    }
+
+    .navicon::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #1b61b7;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
+
+    .navicon::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #1b61b7;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+    }
+
+    .menuBtn:checked~.menuIcon .navicon {
+        background: transparent;
+    }
+
+    .menuBtn:checked~.menuIcon .navicon::before {
+        transform: rotate(35deg);
+        top: 0;
+    }
+
+    .menuBtn:checked~.menuIcon .navicon::after {
+        transform: rotate(-35deg);
+        top: 0;
+    }
+
+    .navicon,
+    .navicon::before,
+    .navicon::after {
+        transition: all .3s ease;
+    }
+
+    .gMenu:has(.menuBtn:checked) .menu {
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        transition: ease, opacity .4s ease, visibility .4s ease, height .4s ease;
+    }
+
+    .menu li {
+        margin: 24px 0;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0%;
+        line-height: 16px;
+    }
+
+    /* #endregion */
+}
+
+@media screen and (max-width:900px) {
+
+    /* #region header ---↓↓↓---serviceSectionのメディアクエリ---↓↓↓--- */
+
+    .serviceSection {
+        margin-bottom: 80px;
+    }
+
+    .serviceAll {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .roomArea {
+        max-width: 351px;
+        margin-bottom: 48px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 8px;
+    }
+
+    .roomArea img {
+        max-width: 351px;
+        width: 100%;
+    }
+
+    .roomArea p {
+        font-size: 14px;
+        line-height: 21px;
+        margin: 8px 0;
+    }
+
+    .roomArea a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /* #endregion ---↑↑↑---serviceSectionのメディアクエリ---↑↑↑--- */
+
+    /* #region header ---↓↓↓---flowSectionのメディアクエリ---↓↓↓--- */
+
+    .flowSection {
+        height: 510px;
+    }
+
+    #flowArea {
+        margin-top: 16px;
+    }
+
+    .flowSection ol {
+        display: block;
+    }
+
+    .flowSection {
+        margin-bottom: 80px;
+    }
+
+    .flowSection ol li {
+        writing-mode: unset;
+        max-width: 300px;
+        height: 32px;
+        margin: 0 auto 32px;
+        padding-top: 8px;
+    }
+
+    .flowSection ol li p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 16px 16px;
+    }
+
+    .beforeArrow1::after,
+    .beforeArrow2::after,
+    .beforeArrow3::after,
+    .beforeArrow4::after,
+    .beforeArrow5::after {
+        transform: rotate(90deg);
+        max-width: 16px;
+        min-height: 32px;
+        margin-top: -8px;
+    }
+
+    /* #endregion ---↑↑↑---flowSectionのメディアクエリ---↑↑↑--- */
+}
+
+@media screen and (max-width:768px) {
+
+    .flowSection {
+        height: 456px;
+    }
+
+    /* #region header デコレーションに関する記述 */
+
+    .decolationDiv::before {
+        height: 70px;
+    }
+
+    .decoCross::before {
+        width: 70px;
+    }
+
+    .decolationDiv2::after {
+        bottom: -70px;
+        height: 70px;
+    }
+
+    .decoCross::after {
+        bottom: -50px;
+        width: 70px;
+    }
+
+    .decolationDiv2::before {
+        bottom: -70px;
+    }
+
+    /* #endregion デコレーションに関する記述 */
+
+    /* #region header ロゴに関する記述　*/
+
+    .logoAll {
+        margin: 16px 12px;
+        height: 19.71px;
+    }
+
+    .d1 {
+        width: 12.74px;
+        height: auto;
+    }
+
+    .d2 {
+        width: 9.69px;
+        height: auto;
+        position: absolute;
+        top: 5.1px;
+        left: 13.95px;
+    }
+
+    .d3 {
+        width: 7.77px;
+        height: auto;
+        position: absolute;
+        top: 5.1px;
+        left: 23.62px;
+    }
+
+    .d4 {
+        width: 4.51px;
+        height: auto;
+        position: absolute;
+        top: 1px;
+        left: 33.67px;
+    }
+
+    .d5 {
+        width: 11.1px;
+        position: absolute;
+        top: 5px;
+        left: 38.24px;
+    }
+
+    .d6 {
+        width: 9.77px;
+        position: absolute;
+        top: 5.18px;
+        left: 50.47px;
+    }
+
+    .h1 {
+        width: 13.39px;
+        position: absolute;
+        top: 0.47px;
+        left: 67.79px;
+    }
+
+    .h2 {
+        width: 10.74px;
+        position: absolute;
+        top: 5px;
+        left: 82.18px;
+    }
+
+    .h3 {
+        width: 9.73px;
+        position: absolute;
+        top: 5.1px;
+        left: 94.15px;
+    }
+
+    .h4 {
+        width: 7.77px;
+        position: absolute;
+        top: 5.1px;
+        left: 104.15px;
+    }
+
+    .h5 {
+        width: 9.69px;
+        height: 9.9px;
+        position: absolute;
+        top: 5px;
+        left: 113.06px;
+    }
+
+    .r1 {
+        width: 10.46px;
+        position: absolute;
+        top: 0.47px;
+        left: 130.06px;
+    }
+
+    .r2 {
+        width: 9.69px;
+        position: absolute;
+        top: 5.18px;
+        left: 141.49px;
+    }
+
+    .r3 {
+        width: 9.77px;
+        position: absolute;
+        top: 5.18px;
+        left: 152.01px;
+    }
+
+    .r4 {
+        width: 10.74px;
+        position: absolute;
+        top: 5.1px;
+        left: 162.97px;
+    }
+
+    .r5 {
+        width: 10.73px;
+        position: absolute;
+        top: 5.49px;
+        left: 173.99px;
+    }
+
+    .r6 {
+        width: 10.81px;
+        position: absolute;
+        top: 5.19px;
+        left: 184.34px;
+    }
+
+    .r7 {
+        width: 5.73px;
+        position: absolute;
+        top: 2.4px;
+        left: 197.82px;
+    }
+
+    .r8 {
+        width: 4.51px;
+        position: absolute;
+        top: 1px;
+        left: 204.43px;
+    }
+
+    .r9 {
+        width: 10.74px;
+        position: absolute;
+        top: 5.1px;
+        left: 209.42px;
+    }
+
+    .r10 {
+        width: 9.77px;
+        position: absolute;
+        top: 5.18px;
+        left: 221.37px;
+    }
+
+    .r11 {
+        width: 7.77px;
+        position: absolute;
+        top: 5.21px;
+        left: 232.23px;
+    }
+
+    /* #endregion */
+
+    /* #region header Section間を跨ぐ記述 */
+
+    h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-size: 12px;
+        line-height: 12px;
+        margin: 8px auto 24px;
+        height: 12px;
+    }
+
+    .topPage {
+        position: relative;
+    }
+
+    /* #endregion */
+
+    /* #region header ---↓↓↓---ContactSectionのメディアクエリ---↓↓↓--- */
+
+    form .pointDiv {
+        margin: 0;
+        max-width: 40px;
+        max-height: 18px;
+        position: relative;
+        top: 1px;
+    }
+
+    .pointDiv span {
+        position: relative;
+        top: 0px;
+    }
+
+    form .pointDiv span {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .contactSection {
+        padding: 16px 12px;
+    }
+
+    .disFont {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .gridDiv {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    form p {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        margin: auto 0;
+    }
+
+    form {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        height: 30px;
+        max-width: 351px;
+        width: 100%;
+    }
+
+    .item15 input[type="text"] {
+        max-width: 125px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .gridSelect {
+        margin-bottom: 24px;
+    }
+
+    .mediaAll {
+        display: flex;
+        justify-content: center;
+    }
+
+    .itemMedia1 {
+        margin-bottom: 16px;
+    }
+
+    .itemMedia2 {
+        max-width: 186px;
+        margin: 0 auto 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .itemMedia3 {
+        max-width: 96px;
+        justify-content: space-between;
+    }
+
+
+
+    .itemMedia4,
+    .itemMedia5 {
+        max-width: 113px;
+        justify-content: space-between;
+    }
+
+
+    .itemMedia6 {
+        max-width: 78px;
+        justify-content: space-between;
+    }
+
+    .itemMedia7 {
+        max-width: 166px;
+        justify-content: space-between;
+    }
+
+    .itemMedia8 {
+        max-width: 234px;
+        justify-content: space-between;
+    }
+
+    .mediaSelect {
+        margin: 0 auto 8px;
+    }
+
+    .itemMedia4 {
+        margin: 0 auto 10px;
+    }
+
+
+    .item15 p {
+        margin-right: 4px;
+    }
+
+    input[type=radio] {
+        width: 16px;
+        height: 16px;
+    }
+
+    input[type="radio"]:checked::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    input[type="submit"] {
+        max-width: 200px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .attachAfter::after {
+        width: 6px;
+        height: 12px;
+        top: 18px;
+        right: 14px;
+    }
+
+    .itemSelect {
+        margin-left: 0;
+    }
+
+    .item15 {
+        max-width: 351px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    /* #endregion ---↑↑↑---contactSectionのメディアクエリ---↑↑↑--- */
+
+    /* #region header ---↓↓↓---conceptSectionのメディアクエリ---↓↓↓--- */
+
+    .conceptSection {
+        margin: 48px 0 80px;
+    }
+
+    .conceptSection div {
+        max-width: 351px;
+        margin: 0 auto;
+    }
+
+    .conceptSection p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    /* #endregion ---↑↑↑---conceptSectionのメディアクエリ---↑↑↑--- */
+
+    /* #region header ---↓↓↓---Q&ASectionのメディアクエリ---↓↓↓--- */
+
+    .questionAndAnswerSection h1 {
+        height: 48px;
+    }
+
+    .questionAndAnswerSection {
+        margin: 80px auto;
+        max-width: 351px;
+    }
+
+    .questionAndAnswerSection dl dt,
+    .questionAndAnswerSection dl dd {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    dt div span,
+    dd div span {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0em;
+    }
+
+    dl dt div,
+    dl dd div {
+        width: 36px;
+        height: 36px;
+    }
+
+    .attachScale {
+        max-width: 308px;
+    }
+
+    .positionEnable2 {
+        padding-top: 6px;
+    }
+
+    .positionEnable {
+        padding-top: 6px;
+    }
+
+    .questionAndAnswerSection dl .disPosition2 {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    /* #endregion ---↑↑↑---Q&ASectionのメディアクエリ---↑↑↑--- */
+
+    /* #region header ---↓↓↓---footerのメディアクエリ---↓↓↓--- */
+
+    .voidSection {
+        height: 126px;
+    }
+
+    .innerDiv {
+        max-width: 200px;
+        height: 48px;
+    }
+
+
+    small {
+        font-size: 12px;
+        line-height: 12px;
+        margin: 16px 0;
+    }
+
+    .topPage {
+        width: 46px;
+        height: 46px;
+        margin-right: 12px;
+    }
+
+    .topPage img {
+        width: 30px;
+        height: 15px;
+        top: 15px;
+    }
+
+    /* #endregion ---↑↑↑---footerのメディアクエリ---↑↑↑--- */
+
+}

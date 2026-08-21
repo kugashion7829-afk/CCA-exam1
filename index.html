@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./common/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./images/svg/bigD.svg" type="image/svg+xml">
+    <link rel="icon alternate" href="./images/png/bigD.png" type="image/png">
+    <title>Design House Renovations</title>
+</head>
+
+<body>
+    <header id="topArea">
+        <div class="navDiv">
+            <!-- logAllは一括で動かす用-->
+            <div class="logoAll">
+                <div class="logoDesign">
+                    <img src="./images/svg/bigD.svg" class="d1">
+                    <img src="./images/svg/smallE.svg" class="d2">
+                    <img src="./images/svg/smallS.svg" class="d3">
+                    <img src="./images/svg/smallI.svg" class="d4">
+                    <img src="./images/svg/smallG.svg" class="d5">
+                    <img src="./images/svg/smallN.svg" class="d6">
+                </div>
+                <div class="logoHouse">
+                    <img src="./images/svg/bigH.svg" class="h1">
+                    <img src="./images/svg/smallO.svg" class="h2">
+                    <img src="./images/svg/smallU.svg" class="h3">
+                    <img src="./images/svg/smallS.svg" class="h4">
+                    <img src="./images/svg/smallE.svg" class="h5">
+                </div>
+                <div class="logoRenovation">
+                    <img src="./images/svg/bigR.svg" class="r1">
+                    <img src="./images/svg/smallE.svg" class="r2">
+                    <img src="./images/svg/smallN.svg" class="r3">
+                    <img src="./images/svg/smallO.svg" class="r4">
+                    <img src="./images/svg/smallV.svg" class="r5">
+                    <img src="./images/svg/smallA.svg" class="r6">
+                    <img src="./images/svg/smallT.svg" class="r7">
+                    <img src="./images/svg/smallI.svg" class="r8">
+                    <img src="./images/svg/smallO.svg" class="r9">
+                    <img src="./images/svg/smallN.svg" class="r10">
+                    <img src="./images/svg/smallS.svg" class="r11">
+                </div>
+            </div>
+            <nav class="gMenu">
+                <div class="menuDiv">
+                    <input class="menuBtn" type="checkbox" id="menuBtn">
+                    <label class="menuIcon" for="menuBtn">
+                        <span class="navicon"></span>
+                    </label>
+                </div>
+                <ul class="menu">
+                    <li><a class="attachSpace" href="#conceptArea">コンセプト</a></li>
+                    <li><a class="attachSpace" href="#serviceArea">サービス</a></li>
+                    <li><a class="attachSpace" href="#flowArea">施工の流れ</a></li>
+                    <li><a class="attachSpace" href="#questionAndAnswerArea">よくあるご質問</a></li>
+                    <li><a class="attachSpace" href="#contactArea">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <picture>
+            <source media="(max-width: 768px)" srcset="./images/png/hero3.png">
+            <img src="./images/png/hero.png" alt="綺麗なテーブルと整列された椅子の写真" class="heroImg">
+        </picture>
+    </header>
+    <main>
+        <section class="conceptSection decoCross">
+            <div class="decolationDiv"></div>
+            <h1 id="conceptArea" class="attachSpace">CONCEPT</h1>
+            <h2 class="attachLine attachSpace">コンセプト</h2>
+            <h3 class="attachSpace">家族が笑顔になれる場所</h3>
+            <div>
+                <p class="attachFont attachSpace">
+                    家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れのしやすい素材を使用したりリフォームをご提案いたします。</p>
+            </div>
+            <div class="decolationDiv2"></div>
+        </section>
+        <section class="serviceSection decoCross">
+            <div class="decolationDiv"></div>
+            <h1 id="serviceArea" class="attachSpace">SERVICE</h1>
+            <h2 class="attachLine attachSpace">サービス</h2>
+            <!-- グループ化しておくほうがcssが適用しやすい要素をクラスでまとめています。-->
+            <div class="serviceAll">
+                <div class="roomArea">
+                    <img src="./images/png/bath.png" alt="浴室の画像">
+                    <h4 class="attachSpace">浴室</h4>
+                    <p class="attachFont attachSpace">ご家族が一緒に入れる広めの浴槽や手すり等、安全性に配慮しています。</p>
+                    <a class="attachSpace bathRoom" href="#">more</a>
+                </div>
+                <div class="roomArea">
+                    <img src="./images/png/living.png" alt="リビングの画像">
+                    <h4 class="attachSpace">リビング</h4>
+                    <p class="attachFont attachSpace">照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。</p>
+                    <a class="attachSpace livingRoom" href="#">more</a>
+                </div>
+                <div class="roomArea">
+                    <img src="./images/png/kitchen.png" alt="キッチンの画像">
+                    <h4 class="attachSpace">キッチン</h4>
+                    <p class="attachFont attachSpace">機能性だけでなく、デザイン性にもこだわっております。</p>
+                    <a class="attachSpace kitchenRoom" href="#">more</a>
+                </div>
+            </div>
+            <div class="decolationDiv2"></div>
+        </section>
+        <section class="flowSection">
+            <h1 id="flowArea" class="attachSpace">FLOW</h1>
+            <h2 class="flowText attachLine attachSpace">施工の流れ</h2>
+            <ol>
+                <li class="beforeArrow1">
+                    <p class="attachSpace">ご相談</p>
+                </li>
+                <li class="beforeArrow2">
+                    <p class="attachSpace">現地調査</p>
+                </li>
+                <li class="beforeArrow3">
+                    <p class="attachSpace">お見積り</p>
+                </li>
+                <li class="beforeArrow4">
+                    <p class="attachSpace">ご契約</p>
+                </li>
+                <li class="beforeArrow5">
+                    <p class="attachSpace">施工</p>
+                </li>
+                <li>
+                    <p class="attachSpace">お引渡し</p>
+                </li>
+            </ol>
+        </section>
+        <section class="questionAndAnswerSection decoCross">
+            <div class="decolationDiv"></div>
+            <h1 id="questionAndAnswerArea" class="attachSpace">Q&A</h1>
+            <h2 class="attachLine attachSpace">よくあるご質問</h2>
+            <dl>
+                <dt class="attachFont">
+                    <div><span class="qaEnable">Q.</span></div><span class="attachScale">見積りは無料ですか？</span>
+                </dt>
+                <dd class="attachFont disPosition2">
+                    <div><span class="qaEnable">A.</span></div><span
+                        class="attachScale positionEnable2">はい。お見積りは無料で承っております。ホームページよりお気軽にお問い合わせください。</span>
+                </dd>
+                <dt class="attachFont">
+                    <div><span class="qaEnable">Q.</span></div><span
+                        class="attachScale">普段通り生活をしながらのリフォーム工事は可能ですか？</span>
+                </dt>
+                <dd class="attachFont disPosition">
+                    <div><span class="qaEnable">A.</span></div>
+                    <span
+                        class="attachScale positionEnable">はい。もちろん可能です。工事中の箇所は、何日間か使用できなくなる場合もございますのであらかじめご了承ください。大型リフォームの場合には、仮住まいもお薦めしております。</span>
+                </dd>
+            </dl>
+            <div class="decolationDiv2"></div>
+        </section>
+        <section class="contactSection">
+            <h1 id="contactArea" class="attachSpace">CONTACT</h1>
+            <h2 class="attachLine attachSpace">お問い合わせ</h2>
+            <form>
+                <div class="gridDiv">
+                    <div class="itemMedia1 mediaAll">
+                        <p class="item01 attachSpace">お問い合わせ種別</p>
+                        <div class="item02 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <div class="itemMedia2 mediaAll">
+                        <div class="item03 itemSelect"><label class="disFont"><input type="radio" name="attend"
+                                    value="資料請求" required>資料請求</label>
+                        </div>
+                        <div class="itemEx itemSelect"><label class="disFont"><input type="radio" name="attend"
+                                    value="ご相談" required>ご相談</label>
+                        </div>
+                    </div>
+                    <!--sapnタグにcssでデザインを適用する予定-->
+                    <div class="itemMedia3 mediaAll mediaSelect">
+                        <p class="item04 attachSpace">お名前</p>
+                        <div class="item05 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <input class="item06 gridSelect itemSelect" type="text" name="userName" required>
+                    <!--ここまでお名前-->
+                    <div class="itemMedia4 mediaAll">
+                        <p class="item07 attachSpace">フリガナ</p>
+                        <div class="item08 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <input class="item09 gridSelect itemSelect" type="text" name="userNamePhonetic" required>
+                    <!--ここまでフリガナ-->
+                    <div class="itemMedia5 mediaAll mediaSelect">
+                        <p class="item10 attachSpace">電話番号</p>
+                        <div class="item11 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <input class="item12 gridSelect itemSelect" type="tel" name="tel" required>
+                    <!--ここまで電話番号-->
+                    <div class="itemMedia6 mediaAll mediaSelect">
+                        <p class="item13 attachSpace">住所</p>
+                        <div class="item14 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <div class="item15 itemSelect">
+                        <p class="attachSpace">〒</p><input type="text" name="postCode" required>
+                    </div><input class="itemEx2 gridSelect itemSelect" type="text" name="address" required>
+                    <!--ここまで住所-->
+                    <div class="itemMedia7 mediaAll mediaSelect">
+                        <p class="item16 attachSpace">メールアドレス</p>
+                        <div class="item17 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <input class="item18 gridSelect itemSelect" type="email" name="userMail" required>
+                    <!--ここまでメールアドレス-->
+                    <div class="itemMedia8 mediaAll mediaSelect">
+                        <p class="item19 attachSpace">メールアドレス(確認用)</p>
+                        <div class="item20 pointDiv">
+                            <span>必須</span>
+                        </div>
+                    </div>
+                    <input class="item21 gridSelect itemSelect" type="email" name="userMailConfirmation" required>
+                    <!--ここまでメールアドレス確認用-->
+                    <div class="itemMedia9 mediaAll mediaSelect">
+                        <p class="item22 attachSpace">お問い合わせ内容</p>
+                    </div>
+                    <textarea class="item23 itemSelect" name="help"></textarea>
+                </div>
+                <!--ここまでお問い合わせ-->
+                <div class="innerDiv">
+                    <div class="attachAfter"></div>
+                    <input type="submit" value="入力内容を確認する">
+                </div>
+            </form>
+        </section>
+        <section class="voidSection">
+            <a class="topPage attachSpace" href="#topArea">
+                <img src="./images/svg/arrow6.svg">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <small class="attachSpace">2023 Design House Renovations</small>
+    </footer>
+</body>
+
+</html>
